@@ -1,0 +1,28 @@
+http://embedded-lab.com/blog/post-data-google-sheets-using-esp8266/
+Updated library linked to does not work, but older library does
+
+#include <ESP8266WiFi.h>
+#include "HTTPSRedirect.h"
+
+const int httpsPort =  443;
+HTTPSRedirect client(httpsPort);
+
+WiFi.begin(ssid, password);
+
+
+
+
+const int httpsPort =  443;
+const char* host = "script.google.com";
+client.connect(host, httpsPort);
+
+
+const char* host = "script.google.com";
+const char* googleRedirHost = "script.googleusercontent.com"
+client.printRedir(urlFinal, host, googleRedirHost);
+
+
+
+11cFKMbqIJh8TlUse9O1h5r4fDMjyuT31oYHdiGvXS6k
+
+https://script.google.com/macros/s/AKfycbwerkRWmZCaKTA4DpOi4mSSPBY7k8VHQlkPJmN4ZWqVwrvivkE/exec
